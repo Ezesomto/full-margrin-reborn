@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FULL MARGIN REBORN - Premium Trading Signals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/x-icon" href="fullmarginreborn.ico">
+</head>
+<body>
+    <!-- Animation Container -->
+    <div class="animation-container">
+        <div class="crypto-ball"></div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header with Crypto Ticker -->
+        <header class="header">
+            <div class="logo">FULL MARGIN REBORN</div>
+            <div class="tagline">High-Precision Trading Signals for US30, S&P 500, DOW 30, NASDAQ, FOREX & GOLD</div>
+            
+            <div class="crypto-ticker">
+                <div class="ticker-item">
+                    <i class="fab fa-bitcoin ticker-icon"></i>
+                    <span class="ticker-name">BTC/USD</span>
+                    <span class="ticker-price">$<span id="btc-price">00,000</span></span>
+                    <span class="ticker-change positive">+<span id="btc-change">0.00</span>%</span>
+                </div>
+                <div class="ticker-item">
+                    <i class="fas fa-coins ticker-icon"></i>
+                    <span class="ticker-name">ETH/USD</span>
+                    <span class="ticker-price">$<span id="eth-price">0,000</span></span>
+                    <span class="ticker-change positive">+<span id="eth-change">0.00</span>%</span>
+                </div>
+                <div class="ticker-item">
+                    <i class="fas fa-dollar-sign ticker-icon"></i>
+                    <span class="ticker-name">USDT/USD</span>
+                    <span class="ticker-price">$<span id="usdt-price">1.00</span></span>
+                    <span class="ticker-change positive">+<span id="usdt-change">0.00</span>%</span>
+                </div>
+                <div class="ticker-item">
+                    <i class="fas fa-chart-line ticker-icon"></i>
+                    <span class="ticker-name">US30</span>
+                    <span class="ticker-price"><span id="us30-price">00,000</span></span>
+                    <span class="ticker-change positive">+<span id="us30-change">0.00</span>%</span>
+                </div>
+                <div class="ticker-item">
+                    <i class="fas fa-chart-bar ticker-icon"></i>
+                    <span class="ticker-name">S&P 500</span>
+                    <span class="ticker-price"><span id="sp500-price">0,000</span></span>
+                    <span class="ticker-change positive">+<span id="sp500-change">0.00</span>%</span>
+                </div>
+                <div class="ticker-item">
+                    <i class="fas fa-gem ticker-icon"></i>
+                    <span class="ticker-name">XAU/USD</span>
+                    <span class="ticker-price">$<span id="gold-price">0,000</span></span>
+                    <span class="ticker-change positive">+<span id="gold-change">0.00</span>%</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Premium Trading Signals</h2>
+            <p>Receive high-precision trading signals for US30, Gold (XAU/USD), and major forex currency pairs directly to your Telegram. Our expert analysis helps you make informed trading decisions.</p>
+            
+            <p class="disclaimer">Get instant access to daily trading signals and market insights by joining the channel below..</p>
+        </section>
+        
+        <!-- Grid Cards -->
+        <div class="grid-container">
+            <!-- Join Telegram Card -->
+            <section class="card">
+                <h3>How to Join</h3>
+                <ul>
+                    <li>Click the "Join Telegram Channel" button below</li>
+                    <li>Open the link in your Telegram app</li>
+                    <li>Press "JOIN" to subscribe to our signals</li>
+                    <li>Enable notifications to receive signals in real-time</li>
+                    <li>Get high-precision trading signals</li>
+                </ul>
+                <a href="https://t.me/fullmarginborn" class="join-btn" target="_blank">
+                    <i class="fab fa-telegram"></i> Join Our Telegram Channel
+                </a>
+            </section>
+            
+            <!-- Proofs Card -->
+            <section class="card">
+                <h3>Withdrawal Proofs</h3>
+                <p>See real withdrawal proofs from our community members:</p>
+                
+                <div class="proof-grid">
+                    <div style="margin-top: 1rem; font-size: 0.9rem;">
+                        <a style="color: rgb(237, 204, 140); " href="https://etherscan.io/tx/0x668d3741863fc804d38aef9e5ff44c4347feea16e690dfd094baf967b275c58a">
+                            https://etherscan.io/tx/<br>0x668d3741863fc804d38aef9e5ff44c4347<br>feea16e690dfd094baf967b275c58a
+                        </a>
+                    </div>
+                </div>
+
+                 <a href="https://t.me/fullmarginborn" class="join-btn" target="_blank">
+                    <i class="fab fa-telegram"></i> Join Our Telegram Channel
+                </a>
+            </section>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2023 FULL MARGIN REBORN. All rights reserved.</p>
+            <p>Not affiliated with Telegram. Trade with us for huge profits.</p>
+            
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Remove animation container after animation completes
+        setTimeout(() => {
+            document.querySelector('.animation-container').remove();
+        }, 4000);
+        
+        // Simulate live crypto prices (in a real implementation, you'd connect to an API)
+        function updatePrices() {
+            // BTC
+            const btcPrice = (Math.random() * 10000 + 25000).toFixed(2);
+            const btcChange = (Math.random() * 5 - 2.5).toFixed(2);
+            document.getElementById('btc-price').textContent = btcPrice;
+            document.getElementById('btc-change').textContent = Math.abs(btcChange);
+            document.querySelector('#btc-price').parentElement.nextElementSibling.classList.toggle('negative', btcChange < 0);
+            
+            // ETH
+            const ethPrice = (Math.random() * 1000 + 1500).toFixed(2);
+            const ethChange = (Math.random() * 5 - 2.5).toFixed(2);
+            document.getElementById('eth-price').textContent = ethPrice;
+            document.getElementById('eth-change').textContent = Math.abs(ethChange);
+            document.querySelector('#eth-price').parentElement.nextElementSibling.classList.toggle('negative', ethChange < 0);
+            
+            // USDT (stablecoin, so minimal fluctuation)
+            const usdtPrice = (1 + (Math.random() * 0.02 - 0.01)).toFixed(4);
+            const usdtChange = (Math.random() * 0.2 - 0.1).toFixed(2);
+            document.getElementById('usdt-price').textContent = usdtPrice;
+            document.getElementById('usdt-change').textContent = Math.abs(usdtChange);
+            document.querySelector('#usdt-price').parentElement.nextElementSibling.classList.toggle('negative', usdtChange < 0);
+            
+            // US30
+            const us30Price = (Math.random() * 1000 + 33000).toFixed(2);
+            const us30Change = (Math.random() * 1.5 - 0.75).toFixed(2);
+            document.getElementById('us30-price').textContent = us30Price;
+            document.getElementById('us30-change').textContent = Math.abs(us30Change);
+            document.querySelector('#us30-price').parentElement.nextElementSibling.classList.toggle('negative', us30Change < 0);
+            
+            // S&P 500
+            const sp500Price = (Math.random() * 100 + 4100).toFixed(2);
+            const sp500Change = (Math.random() * 1.2 - 0.6).toFixed(2);
+            document.getElementById('sp500-price').textContent = sp500Price;
+            document.getElementById('sp500-change').textContent = Math.abs(sp500Change);
+            document.querySelector('#sp500-price').parentElement.nextElementSibling.classList.toggle('negative', sp500Change < 0);
+            
+            // Gold
+            const goldPrice = (Math.random() * 100 + 1900).toFixed(2);
+            const goldChange = (Math.random() * 1.8 - 0.9).toFixed(2);
+            document.getElementById('gold-price').textContent = goldPrice;
+            document.getElementById('gold-change').textContent = Math.abs(goldChange);
+            document.querySelector('#gold-price').parentElement.nextElementSibling.classList.toggle('negative', goldChange < 0);
+            
+            // Update every 3 seconds
+            setTimeout(updatePrices, 3000);
+        }
+        
+        // Start price updates after animation completes
+        setTimeout(updatePrices, 3500);
+    </script>
+</body>
+</html>
